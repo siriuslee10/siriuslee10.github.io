@@ -103,7 +103,20 @@ mjx-container [size="sm"] {
 }
 
 html {
-  font-size: 112.5% !important; /* 16px * 1.125 = 18px */
+  font-size: 18px !important;
+}
+
+body {
+  font-size: 1rem !important;
+}
+
+body * {
+  font-size: inherit !important;
+}
+
+/* 特别处理可能被重置的元素 */
+.text-md, .text-zinc-700, .text-zinc-400, .text-black, .text-white {
+  font-size: inherit !important;
 }
 
 mjx-container [size="lg"] {
