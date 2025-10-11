@@ -5,5 +5,5 @@
 }
 
 .font-bold {
-    font-size: inherit !important; /* 重置为继承父元素的字体大小 */
+    font-weight:700 !important; /* 重置为继承父元素的字体大小 */
 }
