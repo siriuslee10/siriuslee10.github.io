@@ -102,21 +102,13 @@ mjx-container [size="sm"] {
   font-size: 85%;
 }
 
-html {
-  font-size: 18px !important;
+/* 持续强制字体大小 */
+@keyframes forceFontSize {
+  from, to { font-size: calc(100% + 2px) !important; }
 }
 
-body {
-  font-size: 1rem !important;
-}
-
-body * {
-  font-size: inherit !important;
-}
-
-/* 特别处理可能被重置的元素 */
-.text-md, .text-zinc-700, .text-zinc-400, .text-black, .text-white {
-  font-size: inherit !important;
+body, p, a, div, span, li, h1, h2, h3, h4, h5, h6 {
+  animation: forceFontSize 0.001s linear infinite !important;
 }
 
 mjx-container [size="lg"] {
